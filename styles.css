@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 
 * {
     font-family: 'Titillium Web', sans-serif;
@@ -7,6 +7,7 @@
 
 body {
     margin: 0;
+    background-color: whitesmoke;
 }
 
 .logo {
@@ -36,7 +37,7 @@ ul {
 
 .hero {
     background-color: #3843B8;
-    background: linear-gradient(to bottom, #2935b6, #80b1f0);
+    background: linear-gradient(to bottom, #2935b6, rgb(155, 221, 243));
     color: white;
     border-bottom-left-radius: 450px 500px;
     border-bottom-right-radius: 1500px 800px;
@@ -74,6 +75,8 @@ ul {
     }
 } */
 
+/* . >>>>>>>>>>>      What we offer section    <<<<<<<<<<< */
+
 .whatWeOffer-container {
     margin-top: 50px;
     display: flex;
@@ -89,6 +92,7 @@ ul {
 
 .whatWeOffer-paragraph {
     text-align: center;
+    font-size: 20px;
 }
 
 .features-container {
@@ -97,6 +101,7 @@ ul {
     justify-content: space-around;
     margin-top: 50px;
 }
+
 .feature-container {
     width: 250px;
     text-align: center;
@@ -104,6 +109,11 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-weight: lighter;
+}
+
+.feature-container p {
+    font-size: 20px;
 }
 
 .icon-container {
@@ -129,5 +139,113 @@ ul {
     margin: auto;
 }
 
+/* >>>>>>>>>>>     Contract Section      <<<<<<<<<<   */
+.manOnMoney-image {
+    width: 400px;
+    height: auto;
+    border-radius: 300px 350px 750px 400px;
+    padding: 50px;
+}
 
+.contractSection-image-container {
+    background-color: #d6e4f7;
+    border-radius: 200px 500px 250px 400px;
+    margin-top: 100px;
+}
 
+.checkMark-image {
+    width: 30px;
+    height: auto;
+}
+
+.contractSection-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+.contractSection-container-right {
+    width: 50vw;
+}
+
+.contractSection-top-right {
+    width: 100%;
+}
+
+.contractSection-bottom-right {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 3rem;
+}
+
+.grid-contract h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* >>>>>>>>>>>>>  Portfolio Section      <<<<<<<<<<<<<<<< */
+
+.portfolioSection-header {
+    text-align: center;
+}
+
+.portfolio-image {
+    width: 250px;
+    height: auto;
+}
+
+.portfolioCards-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.portfolioPiece {
+    border-bottom: #80b1f0 solid 5px;
+    border-radius: 10px;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 0 10px rgb(192, 190, 190);
+    width: 300px;
+    padding: 20px;
+}
+
+/*   >>>>>>>>>>> Who we are section   <<<<<<<<<<<<<< */
+
+.whoWeAre-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.profile-pic {
+    width: 300px;
+    height: auto;
+    border-radius: 300px 500px 300px 600px;
+}
+
+.profile-pic-container {
+    width: 400px;
+    height: auto;
+    background-color: #80b1f0;
+    border-radius: 500px 200px 500px 200px;
+    text-align: center;
+}
+
+.whoWeAre-paragraph {
+    width: 600px;
+    text-align: center;
+    margin-bottom: 100px;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.whoWeAre-container h3 {
+    font-weight: lighter;
+}
