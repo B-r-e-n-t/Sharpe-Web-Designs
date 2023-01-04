@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.logo {
+    width: 160px;
+    height: 135px;
+    margin-left: 9vw;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #2935b6;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-right: 10vw;
+}
+
+.hero {
+    background-color: #3843B8;
+    background: linear-gradient(to bottom, #2935b6, #80b1f0);
+    color: white;
+    border-bottom-left-radius: 450px 500px;
+    border-bottom-right-radius: 1500px 800px;
+    height: 600px;
+
+    margin: 0;
+    padding-top: 50px;
+}
+
+.hero h1 {
+    font-size: 5vw;
+    margin: 0;
+    padding-left: 10vw;
+}
+
+
+.hero h3 {
+    font-size: 1rem;
+    padding-left: 10vw;
+}
+
+.computers-image {
+    /* width: 40rem;
+    height: 35rem; */
+    width: 40vw;
+    height: auto;
+    position: absolute;
+    top: 225px;
+    right: 7vw;
+}
+
+/* @media(max-width: 1200px) {
+    .computers-image {
+        position: inherit;
+    }
+} */
+
+.whatWeOffer-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+}
+
+.blue {
+    color: #80b1f0;
+}
+
+.whatWeOffer-paragraph {
+    text-align: center;
+}
+
+
+
