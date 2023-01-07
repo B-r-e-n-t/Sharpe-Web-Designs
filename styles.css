@@ -13,28 +13,119 @@ body {
 .logo {
     width: 160px;
     height: 135px;
-    margin-left: 9vw;
+    margin-left: 3vw;
 }
 
-nav {
+.navbar {
     display: flex;
-    width: 100%;
     justify-content: space-between;
-    background-color: #2935b6;
-    margin: 0;
-}
-
-ul {
-    display: flex;
-    text-decoration: none;
-    list-style: none;
     color: white;
-    justify-content: space-between;
+    background-color: #2935b6;
     align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 150px;
+  } 
+  
+  .logo {
+    width: 200px;
+    height: auto;
+    /* height: 140px; */
+  }
+  
+  .contact-button {
+    background-color: rgb(208, 96, 96);
+    color: white;
+    border-radius: 10px;
+  }
+  
+  #navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
     gap: 50px;
-    margin-right: 10vw;
-}
+  }
+  #navbar-links  li{
+    list-style: none;
+    border-bottom: white solid 5px;
+  }
+  
+  #navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+    font-size: 1rem;
+  }
+  
+  #navbar-links li:hover {
+    cursor: pointer;
+    border-bottom: #2935b6 solid 5px;
+  }
+  
+  #hamburger-button {
+    position: absolute;
+    top: 1.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+  }
+  
+  #hamburger-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 900px) {
+    #hamburger-button {
+      display: flex;
+      margin-top: 30px;
+    }
+  
+    #navbar-links {
+      display: none;
+      width: 100%;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  
+    #navbar-links ul {
+      flex-direction: column;
+      width: 100%;
+      background-color: white;
+      z-index: 1;
+    }
 
+    .contact-button {
+        border-radius: 0;
+    }
+  
+    #navbar-links li {
+      text-align: center;
+      font-size: 5rem;
+    }
+
+    #navbar-links li a {
+        color: black;
+    }
+  
+    #navbar-links.active {
+      display: flex;
+    }
+  } 
+  
+  /* >>>>>>>>>>>>>>>> Hero Section <<<<<<<<<<<<<<<*/
 .hero {
     background-color: #3843B8;
     background: linear-gradient(to bottom, #2935b6, rgb(155, 221, 243));
@@ -198,6 +289,7 @@ ul {
 
 .portfolioCards-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 50px;
@@ -249,3 +341,127 @@ ul {
 .whoWeAre-container h3 {
     font-weight: lighter;
 }
+
+/* >>>>>>>>>>>>> Footer Section <<<<<<<<<<<<<<<<< */
+
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 75px;
+    background-color: #2935b6;
+    color: white;
+    align-items: center;
+    margin-top: 0;
+    padding-bottom: 50px;
+}
+
+.footer-section h4 {
+    font-weight: lighter;
+}
+.logo-footer {
+    width: 300px;
+    height: auto;
+}
+
+.footer-navigation-section a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+.curvy-div {
+    margin: 0;
+    font-size: 0;
+}
+
+path {
+    margin: 0;
+}
+
+/* >>>>>>>>>>>>>>> Contact Form <<<<<<<<<<<<<<< */
+
+.contact-form-container {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  input {
+    width: 50vw;
+    height: 50px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+  }
+  textarea {
+    width: 50vw;
+    height: 250px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .submit-btn {
+    border-radius: 10px;
+    background-color: #2935b6;
+    color: white;
+    width: 100px;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+  }
+  
+  .contact-info h4 {
+    font-size: 1.5rem;
+  }
+  
+  .contact-icons {
+    width: 50px;
+    height: auto;
+  }
+  
+  /* >>>>>>>>>>>>>>> About Page <<<<<<<<<<<<<<<<<*/
+  .about-profile-pic {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-page-intro-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+  }
+
+  .about-page-intro-p {
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-page-intro-p h1 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-page-intro-p p {
+    font-weight: lighter;
+  } 
