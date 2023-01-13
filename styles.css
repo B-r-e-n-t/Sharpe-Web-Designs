@@ -133,7 +133,6 @@ body {
     border-bottom-left-radius: 450px 500px;
     border-bottom-right-radius: 1500px 800px;
     height: 600px;
-
     margin: 0;
     padding-top: 50px;
 }
@@ -181,6 +180,15 @@ body {
       top: 400px;
       right: 0px;
       width: 450px;
+  }
+
+  .hero h1 {
+    padding-left: 0;
+    font-size: 2.5rem;
+  }
+
+  .hero h3 {
+    padding-left: 0;
   }
 }
 
@@ -415,7 +423,6 @@ body {
 .curvy-div {
     margin: 0;
     font-size: 0;
-    height: 200px;
 }
 
 path {
@@ -451,6 +458,16 @@ path {
     height: 250px;
     font-size: 25px;
     font-family: 'Roboto', sans-serif;
+  }
+
+  @media(max-width: 1200px) {
+    input {
+      width: 80vw;
+    }
+
+    textarea {
+      width: 80vw;
+    }
   }
   
   .submit-btn {
@@ -540,4 +557,18 @@ path {
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 1.5rem;
+  }
+
+  /* >>>>>>>>>>>>>>>>>>>> Scrolling Animations <<<<<<<<<<<<<<<<<<<<<*/
+
+  .hidden{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1.5s;
+  }
+
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
   }
