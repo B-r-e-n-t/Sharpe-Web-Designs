@@ -153,18 +153,36 @@ body {
 .computers-image {
     /* width: 40rem;
     height: 35rem; */
-    width: 40vw;
+    width: 600px;
     height: auto;
     position: absolute;
     top: 225px;
     right: 7vw;
 }
 
-/* @media(max-width: 1200px) {
+@media(max-width: 1400px) {
+  .computers-image {
+      position: absolute;
+      right: 0px;
+  }
+}
+
+@media(max-width: 1200px) {
     .computers-image {
-        position: inherit;
+        position: absolute;
+        top: 400px;
+        right: 0px;
     }
-} */
+}
+
+@media(max-width: 600px) {
+  .computers-image {
+      position: absolute;
+      top: 400px;
+      right: 0px;
+      width: 450px;
+  }
+}
 
 /* . >>>>>>>>>>>      What we offer section    <<<<<<<<<<< */
 
@@ -252,7 +270,7 @@ body {
 .contractSection-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 100px;
+    margin-top: 100px;
     justify-content: space-around;
     gap: 100px;
 }
@@ -261,9 +279,23 @@ body {
     width: 50vw;
 }
 
-.contractSection-top-right {
-    width: 100%;
+/* @media(max-width: 800px) {
+  .contractSection-container-right {
+      width: 700px;
+      margin: 20px;
+  }
+} */
+
+@media(max-width: 1000px) {
+  .contractSection-container-right {
+      width: 80vw;
+      margin: 20px;
+  }
 }
+
+/* .contractSection-top-right {
+    width: 100%;
+} */
 
 .contractSection-bottom-right {
     display: grid;
@@ -280,6 +312,7 @@ body {
 
 .portfolioSection-header {
     text-align: center;
+    margin-top: 100px;
 }
 
 .portfolio-image {
@@ -338,6 +371,12 @@ body {
     font-size: 20px;
 }
 
+@media(max-width: 600px) {
+  .whoWeAre-paragraph {
+      width: 400px;
+  }
+}
+
 .whoWeAre-container h3 {
     font-weight: lighter;
 }
@@ -376,6 +415,7 @@ body {
 .curvy-div {
     margin: 0;
     font-size: 0;
+    height: 200px;
 }
 
 path {
@@ -416,6 +456,7 @@ path {
   .submit-btn {
     border-radius: 10px;
     background-color: #2935b6;
+    border: 0;
     color: white;
     width: 100px;
   }
@@ -428,6 +469,7 @@ path {
   
   .contact-info h4 {
     font-size: 1.5rem;
+    font-weight: lighter;
   }
   
   .contact-icons {
@@ -439,6 +481,8 @@ path {
   .about-profile-pic {
     width: 300px;
     height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(85, 84, 84);
   }
 
   .about-page-intro-section {
@@ -462,6 +506,38 @@ path {
     padding: 0;
   }
 
-  .about-page-intro-p p {
+  .about-page-intro-p h3 {
     font-weight: lighter;
   } 
+
+  .about-page-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+
+  .feature {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .about-page-feature-icon {
+    width: 150px;
+    height: auto;
+  }
+
+  /* >>>>>>>>>>>>>>>>>>>>> Portfolio Page <<<<<<<<<<<<<<<<<<<*/
+
+  .portfolio-page-intro {
+    text-align: center;
+    font-weight: lighter;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+  }
