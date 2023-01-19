@@ -437,6 +437,7 @@ path {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap-reverse;
+    gap: 50px;
   }
   
   form {
@@ -569,6 +570,6 @@ path {
 
   .show {
     opacity: 1;
-    filter: blur(0);
+    /* filter: blur(0); */
     transform: translateX(0);
   }
