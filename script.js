@@ -6,6 +6,9 @@ hamburgerButton.addEventListener('click', () => {
     navBarLinks.classList.toggle('active')
 })
 
+
+
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -17,10 +20,5 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 
-const hiddenElemtns = document.querySelector('.hidden');
-hiddenElemtns.forEach((el) => observer.observe(el));
-
-
-document.querySelector('.submit-btn').addEventListener( () => {
-    document.querySelectorAll('.name').value = '';
-})
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach( el => {observer.observe(el)});
