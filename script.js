@@ -17,5 +17,10 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 
-const hiddenElemtns = document.querySelectorAll('.hidden');
+const hiddenElemtns = document.querySelector('.hidden');
 hiddenElemtns.forEach((el) => observer.observe(el));
+
+
+document.querySelector('.submit-btn').addEventListener( () => {
+    document.querySelectorAll('.name').value = '';
+})
