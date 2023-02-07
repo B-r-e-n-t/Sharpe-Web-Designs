@@ -3,27 +3,34 @@
 * {
     font-family: 'Titillium Web', sans-serif;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
+
+a {
+  text-decoration: none;
+}
+
+/* .hero-nav-background {
+  background-image: url('/Users/brentsharpe/repos/Sharpe-Web-Designs/images/heroBackground.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 450px 500px;
+  border-bottom-right-radius: 1500px 800px;
+} */
 
 body {
-    margin: 0;
     background-color: whitesmoke;
-}
-
-.logo {
-    width: 160px;
-    height: 135px;
-    margin-left: 3vw;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     color: white;
-    background-color: #2935b6;
+    background-color: #240090;
     align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 10vw;
+    padding-right: 10vw;
     height: 150px;
   } 
   
@@ -33,10 +40,16 @@ body {
     /* height: 140px; */
   }
   
-  .contact-button {
-    background-color: rgb(208, 96, 96);
+  /* .contact-button {
+    color: #3500D3;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+  } */
+
+  .contact-button:hover {
     color: white;
-    border-radius: 10px;
+    background-color: #282828;
   }
   
   #navbar-links ul {
@@ -60,7 +73,7 @@ body {
   
   #navbar-links li:hover {
     cursor: pointer;
-    border-bottom: #2935b6 solid 5px;
+    border-bottom: 0;
   }
   
   #hamburger-button {
@@ -80,16 +93,28 @@ body {
     background-color: white;
     border-radius: 10px;
   }
+
+  /* .contact-button {
+    color: #3500D3;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+  } */
   
   @media (max-width: 900px) {
     #hamburger-button {
       display: flex;
       margin-top: 30px;
     }
+
   
     #navbar-links {
       display: none;
       width: 100%;
+    }
+
+    .navbar-logo {
+      margin-left: 50px;
     }
   
     .navbar {
@@ -97,7 +122,9 @@ body {
       align-items: flex-start;
       width: 100%;
       margin: 0;
-      padding: 0;
+      padding-right: 50px;
+      padding-left: 50px;
+      justify-content: center;
     }
   
     #navbar-links ul {
@@ -128,7 +155,7 @@ body {
   /* >>>>>>>>>>>>>>>> Hero Section <<<<<<<<<<<<<<<*/
 .hero {
     background-color: #3843B8;
-    background: linear-gradient(to bottom, #2935b6, rgb(155, 221, 243));
+    background: linear-gradient(to bottom, #240090, #190061);
     color: white;
     border-bottom-left-radius: 450px 500px;
     border-bottom-right-radius: 1500px 800px;
@@ -170,7 +197,8 @@ body {
     .computers-image {
         position: absolute;
         top: 350px;
-        right: 0px;
+        right: 150px;
+        width: 450px;
     }
 }
 
@@ -178,24 +206,24 @@ body {
   .computers-image {
       position: absolute;
       top: 400px;
-      right: 0px;
+      left: 25px;
       width: 450px;
   }
 
   .hero h1 {
-    padding-left: 0;
+    padding-left: 50px;
     font-size: 2.5rem;
   }
 
   .hero h3 {
-    padding-left: 0;
+    padding-left: 50px;
   }
 }
 
 /* . >>>>>>>>>>>      What we offer section    <<<<<<<<<<< */
 
 .whatWeOffer-container {
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -204,7 +232,7 @@ body {
 }
 
 .blue {
-    color: #80b1f0;
+    color: #240090;
 }
 
 .whatWeOffer-paragraph {
@@ -256,6 +284,61 @@ body {
     margin: auto;
 }
 
+/*  >>>>>>>>>>>>>>>>      Pricing Cards   <<<<<<<<<<<<<<<<<<  */
+
+.pricing-plans-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-card-bottom {
+  margin: 0;
+}
+
+.price-card {
+  border: black 1px solid;
+  width: 250px;
+  height: 400px;
+  box-shadow: 0 0 10px rgb(192, 190, 190);
+}
+
+.price-card-maint {
+  border-left: 0px;
+}
+
+.price-card-month {
+  border-right: 0px;
+}
+
+.price-card-lump {
+  width: 300px;
+  height: 500px;
+  border: 1px black solid;
+}
+
+.plan-title {
+  text-align: center;
+  margin: 0;
+  background-color: #240090;
+  height: 50px;
+  color: white;
+  text-align: center;
+  padding: 0;
+}
+
+@media(max-width: 800px) {
+  .price-card {
+      border: 1px black solid;
+  }
+
+  .pricing-plans-section {
+    flex-direction: column;
+  }
+}
+
 /* >>>>>>>>>>>     Contract Section      <<<<<<<<<<   */
 .manOnMoney-image {
     width: 400px;
@@ -265,7 +348,7 @@ body {
 }
 
 .contractSection-image-container {
-    background-color: #d6e4f7;
+    background-color: #240090;
     border-radius: 200px 500px 250px 400px;
     margin-top: 100px;
 }
@@ -285,6 +368,11 @@ body {
 
 .contractSection-container-right {
     width: 50vw;
+}
+
+.contractSection-bottom-right {
+  gap: 50px;
+  padding-top: 50px;
 }
 
 /* @media(max-width: 800px) {
@@ -337,7 +425,7 @@ body {
 }
 
 .portfolioPiece {
-    border-bottom: #80b1f0 solid 5px;
+    border-bottom: #240090 solid 5px;
     border-radius: 10px;
     background-color: white;
     border-bottom-left-radius: 5px;
@@ -366,7 +454,7 @@ body {
 .profile-pic-container {
     width: 400px;
     height: auto;
-    background-color: #80b1f0;
+    background-color: #240090;
     border-radius: 500px 200px 500px 200px;
     text-align: center;
 }
@@ -396,7 +484,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 75px;
-    background-color: #2935b6;
+    background-color: #240090;
     color: white;
     align-items: center;
     margin-top: 0;
@@ -433,11 +521,11 @@ path {
 
 .contact-form-container {
     width: 100%;
-    padding: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap-reverse;
-    gap: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
   
   form {
@@ -446,16 +534,25 @@ path {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    border: white 5px solid;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  .form-border {
+    border: #2935b6 10px solid;
+    border-radius: 10px 0 0 10px;
+    background-color: #2935b6;
   }
   
   input {
-    width: 50vw;
+    width: 40vw;
     height: 50px;
     font-size: 25px;
     font-family: 'Roboto', sans-serif;
   }
   textarea {
-    width: 50vw;
+    width: 40vw;
     height: 250px;
     font-size: 25px;
     font-family: 'Roboto', sans-serif;
@@ -482,21 +579,35 @@ path {
 
   .submit-btn:hover {
     cursor: pointer;
+    background-color: white;
+    color: #3843B8;
   }
   
   .contact-info {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* width: 500px; */
+    border: #2935b6 solid 5px;
+    border-radius: 0 10px 10px 0;
   }
   
   .contact-info h4 {
     font-size: 1.5rem;
     font-weight: lighter;
+    width: 500px;
   }
   
   .contact-icons {
     width: 50px;
+    height: auto;
+
+  }
+
+  .email-image {
+    width: 200px;
     height: auto;
   }
   
