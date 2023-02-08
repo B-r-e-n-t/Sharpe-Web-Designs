@@ -46,7 +46,8 @@ body {
 
   .contact-button:hover {
     color: #fff;
-    box-shadow: inset 200px 0 0 0 orangered;
+    box-shadow: inset 1200px 0 0 0 orangered;
+    border-radius: 15px;
   }
   
   #navbar-links ul {
@@ -106,17 +107,13 @@ body {
       display: none;
       width: 100%;
     }
-
-    .navbar-logo {
-      margin-left: 50px;
-    }
   
     .navbar {
       flex-direction: column;
       align-items: flex-start;
       width: 100%;
-      padding-right: 50px;
-      padding-left: 50px;
+      /* padding-right: 50px;
+      padding-left: 50px; */
       justify-content: center;
     }
   
@@ -125,7 +122,15 @@ body {
       width: 100%;
       background-color: white;
       z-index: 1;
-      margin-top: 100px;
+      margin-top: 250px;
+      border-radius: 15px;
+      padding: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .navbar-logo {
+      margin-left: 50px;
     }
 
     .contact-button {
@@ -637,24 +642,6 @@ body {
     border: #240090 solid 5px;
     border-radius: 0 10px 10px 0;
   }
-
-  @media(max-width: 1200px) {
-    input {
-      width: 80vw;
-    }
-
-    .form-border {
-      border-radius: 10px;
-    }
-
-    .contact-info {
-      border-radius: 10px 10px 0px 0px;
-    }
-
-    textarea {
-      width: 80vw;
-    }
-  }
   
   .submit-btn {
     border-radius: 10px;
@@ -671,12 +658,6 @@ body {
     color: #3843B8;
   }
   
-  .contact-info h4 {
-    font-size: 1.5rem;
-    font-weight: lighter;
-    width: 500px;
-  }
-  
   .contact-icons {
     width: 50px;
     height: auto;
@@ -686,6 +667,25 @@ body {
   .email-image {
     width: 200px;
     height: auto;
+  }
+
+  @media(max-width: 1200px) {
+    input {
+      width: 80vw;
+    }
+
+    .form-border {
+      border-radius: 10px;
+    }
+
+    .contact-info {
+      border-radius: 10px 10px 0px 0px;
+      width: 70vw;
+    }
+
+    textarea {
+      width: 80vw;
+    }
   }
   
   /* >>>>>>>>>>>>>>> About Page <<<<<<<<<<<<<<<<<*/
