@@ -200,7 +200,7 @@ body {
     width: 600px;
     height: auto;
     position: absolute;
-    top: 225px;
+    top: 325px;
     right: 7vw;
 }
 
@@ -214,16 +214,16 @@ body {
 @media(max-width: 1200px) {
     .computers-image {
         position: absolute;
-        top: 350px;
+        top: 400px;
         right: 50px;
-        width: 450px;
+        width: 500px;
     }
 }
 
 @media(max-width: 900px) {
   .computers-image {
       position: absolute;
-      top: 400px;
+      top: 450px;
       right: 25px;
       width: 450px;
   }
@@ -232,8 +232,8 @@ body {
 @media(max-width: 600px) {
   .computers-image {
       position: absolute;
-      top: 475px;
-      left: 65px;
+      top: 575px;
+      left: 25px;
       width: 350px;
   }
 
