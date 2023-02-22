@@ -15,24 +15,22 @@
     <title>About Us</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-logo">
-          <a href="index.html"><img src="images/whiteLogoNoBackground.png" class="logo"></a>
-        </div>
-        <a href="#" id="hamburger-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div id="navbar-links">
-          <ul>
-            <li><a href="index.html" class="nav-link">HOME</a></li>
-            <li><a href="about.html" class="nav-link">ABOUT</a></li>  
-            <li><a href="portfolio.html" class="nav-link">PORTFOLIO</a></li>
-            <li><a class="contact-button" href="contact.html">CONTACT US</a></li>
-          </ul>
-        </div>
-    </nav>
+    <header class="navigation">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" class="logo" alt=""></a>
+        </div>   
+        <button class="nav-toggle">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">About Us</a></li>
+                <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="about-page-intro-section">
         <img src="images/profilePic.png" class="about-profile-pic hidden">
@@ -83,26 +81,37 @@
 
 
     <footer class="footer-section">
-        <div class="footer-info">
-            <img src="images/whiteLogoNoBackground.png" class="logo-footer">
-            <p>sharpewebdesigns@gmail.com</p>
-            <p>555-555-555</p>
+       
+        <div class="footer-logo-background">
+                <img src="images/logo.png" class="logo-footer">   
         </div>
-        <div class="footer-navigation-section">
+        <div class="footer-info-section">
             <h1>Navigation</h1>
             <a href="index.html"><h4>Home</h4></a>
             <a href="about.html"><h4>About Us</h4></a>
             <a href="portfolio.html"><h4>Portfolio</h4></a>
             <a href="contact.html"><h4>Contact Us</h4></a>
         </div>
-        <div class="footer-services-section">
+        <div class="footer-info-section">
             <h1>Services</h1>
             <h4>Web Design</h4>
             <h4>Website Maintenance</h4>
             <h4>SEO Services</h4>
             <h4>Content Creation</h4>
         </div>
+        <div class="footer-info-section">
+            <h1>Contact</h1>
+            <h4>Email: sharpewebdesigns@gmail.com</h4>
+            <h4>Phone: 601-454-5426</h4>
+            <h4>Contact us Today</h4>
+            <h4>No pressure, no commitment</h4>
+        </div>
     </footer>
+
+    <div class="footer-subsection">
+        <p>Developed by <span class="blue">Sharpe Websites</span></p>
+        <p>Copyright © 2023</p>
+    </div>
 
 <script src="script.js"></script>
 </body>

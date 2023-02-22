@@ -17,24 +17,24 @@
 <body>
 
 
-    <nav class="navbar">
-        <div class="nav-logo">
-          <a href="index.html"><img src="images/whiteLogoNoBackground.png" class="logo"></a>
-        </div>
-        <a href="#" id="hamburger-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div id="navbar-links">
-          <ul>
-            <li><a href="index.html" class="nav-link">HOME</a></li>
-            <li><a href="about.html" class="nav-link">ABOUT</a></li>  
-            <li><a href="portfolio.html" class="nav-link">PORTFOLIO</a></li>
-            <li><a class="contact-button" href="contact.html">CONTACT US</a></li>
-          </ul>
-        </div>
-    </nav>
+
+    <header class="navigation">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" class="logo" alt=""></a>
+        </div>   
+        <button class="nav-toggle">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">About Us</a></li>
+                <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
 
     <div class="hero">
         <h1>Hassle-free Websites <br>Designed. Built. <br>Hosted.</h1>
@@ -98,32 +98,38 @@
     <div class="pricing-plans-section">
             <div class="price-card price-card-month">
                 <h3 class="plan-title">Standard</h3>
-                <p class="price">$1800</p>
+                <p class="price">$2500</p>
                 <p class="price-payments">One time payment</p>
-                <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">5 page static website</p>
-                <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">5 page static website</p>
-                <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">5 page static website</p>
-                <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">5 page static website</p>
+                <div class="pricing-plans-features-container">
+                    <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">5 pages designed</p>
+                    <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">5 pages developed</p>
+                    <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">Content Written</p>
+                    <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">SEO Enabled</p>
+                </div>
                 <button class="pricing-plans-button">Contact Us</button>
             </div>
             <div class="price-card price-card-month">
                 <h3 class="plan-title">Standard Plus</h3>
                 <p class="price">$150</p>
                 <p class="price-payments">Monthly</p>
-                <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">5 page static website</p>
-                <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">5 page static website</p>
-                <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">5 page static website</p>
-                <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">5 page static website</p>
+                <div class="pricing-plans-features-container">
+                    <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">Everything from Standard &</p>
+                    <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">Domain registration</p>
+                    <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">Hosted</p>
+                    <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">Unlimited Edits</p>
+                </div>
                 <button class="pricing-plans-button">Contact Us</button>
             </div>
             <div class="price-card price-card-month">
-                <h3 class="plan-title">Maintenance</h3>
+                <h3 class="plan-title">Maintenance & Hosting</h3>
                 <p class="price">$60</p>
                 <p class="price-payments">Monthly</p>
-                <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">5 page static website</p>
-                <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">5 page static website</p>
-                <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">5 page static website</p>
-                <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">5 page static website</p>
+                <div class="pricing-plans-features-container">
+                    <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">Paired with Standard</p>
+                    <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">Hosted</p>
+                    <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">Unlimited Edits</p>
+                    <p class="pricing-plans-features"><img src="images/check1.png" class="price-icon">Customer Service</p>
+                </div>
                 <button class="pricing-plans-button">Contact Us</button>
             </div>
     </div>
@@ -220,7 +226,8 @@
         <h1><span class="blue">WHO </span> WE ARE</h1>
         <p>------ 👨‍💻 ------</p>
         <p class="whoWeAre-paragraph hidden">My name is Brent, I am a a front-end web developer. 
-            I enjoy making simple but beautiful websites. I 
+            I enjoy making simple but beautiful websites that give small businesses an advantage over
+            their competition. I 
             started this business to help provide for my family while also keeping
             a schedule that allows me to spend more time with my young children. I spent a year and a 
             half teaching myself the right way to make websites and learning 
@@ -229,7 +236,7 @@
         <div class="profile-pic-container hidden">
             <img src="images/profilePic.png" class="profile-pic">
         </div>
-        <h2>Brent S.</h2>
+        <h2>Brent</h2>
         <h3>OWNER / DEVELOPER</h3>
     </div>
 
@@ -241,26 +248,36 @@
 
       <footer class="footer-section">
        
-        <div class="footer-info">
-            <img src="images/whiteLogoNoBackground.png" class="logo-footer">
-            <p>sharpewebdesigns@gmail.com</p>
-            <p>555-555-555</p>
+        <div class="footer-logo-background">
+                <img src="images/logo.png" class="logo-footer">   
         </div>
-        <div class="footer-navigation-section">
+        <div class="footer-info-section">
             <h1>Navigation</h1>
             <a href="index.html"><h4>Home</h4></a>
             <a href="about.html"><h4>About Us</h4></a>
             <a href="portfolio.html"><h4>Portfolio</h4></a>
             <a href="contact.html"><h4>Contact Us</h4></a>
         </div>
-        <div class="footer-services-section">
+        <div class="footer-info-section">
             <h1>Services</h1>
             <h4>Web Design</h4>
             <h4>Website Maintenance</h4>
             <h4>SEO Services</h4>
             <h4>Content Creation</h4>
         </div>
+        <div class="footer-info-section">
+            <h1>Contact</h1>
+            <h4>Email: sharpewebdesigns@gmail.com</h4>
+            <h4>Phone: 601-454-5426</h4>
+            <h4>Contact us Today</h4>
+            <h4>No pressure, no commitment</h4>
+        </div>
     </footer>
+
+    <div class="footer-subsection">
+        <p>Developed by <span class="blue">Sharpe Websites</span></p>
+        <p>Copyright © 2023</p>
+    </div>
 
     <script src="script.js"></script>
 </body>
