@@ -3,6 +3,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* line-height: 1.5; */
 }
 
 a {
@@ -259,7 +260,7 @@ body {
 @media(max-width: 600px) {
   .computers-image {
       position: absolute;
-      top: 575px;
+      top: 525px;
       left: 25px;
       width: 350px;
   }
@@ -296,6 +297,7 @@ body {
 .whatWeOffer-paragraph {
     text-align: center;
     font-size: 20px;
+    max-width: 800px;
 }
 
 .features-container {
@@ -443,7 +445,7 @@ body {
 
 .checkMark-image {
     width: 30px;
-    height: auto;
+    height: 30px;
 }
 
 .contractSection-container {
@@ -485,6 +487,11 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 3rem;
+}
+
+.grid-contract {
+  display: flex;
+  gap: 10px;
 }
 
 .grid-contract h3 {
@@ -660,15 +667,12 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    border: white 5px solid;
     border-radius: 5px;
-    padding: 20px;
+    padding: 0 20px 20px 0;
   }
 
   .form-border {
-    border: #190061 10px solid;
     border-radius: 10px 0 0 10px;
-    background-color: #190061;
   }
   
   input {
@@ -687,12 +691,10 @@ body {
   .contact-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    /* width: 500px; */
-    border: #190061 solid 5px;
     border-radius: 0 10px 10px 0;
+    max-width: 600px;
+    gap: 50px;
+    border-bottom: 50px;
   }
   
   .submit-btn {
@@ -709,16 +711,16 @@ body {
     background-color: white;
     color: #3843B8;
   }
+
+  .contact-info-details {
+    display: flex;
+    align-items: center;
+  }
   
-  .contact-icons {
+  .contact-icon {
     width: 50px;
     height: auto;
-
-  }
-
-  .email-image {
-    width: 200px;
-    height: auto;
+    margin-right: 25px;
   }
 
   @media(max-width: 1200px) {
@@ -735,9 +737,14 @@ body {
       width: 70vw;
     }
 
+    .contact-info-details {
+      margin-bottom: 50px;
+    }
+
     textarea {
       width: 80vw;
     }
+
   }
   
   /* >>>>>>>>>>>>>>> About Page <<<<<<<<<<<<<<<<<*/
