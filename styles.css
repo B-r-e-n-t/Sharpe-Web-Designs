@@ -45,8 +45,8 @@ body {
   
   .nav__link {
     color: white;
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-h3);
+    /* font-weight: var(--fw-bold);
+    font-size: var(--fs-h3); */
     text-decoration: none;
     padding-bottom: 15px;
   }
@@ -358,6 +358,10 @@ body {
   margin: 0;
 }
 
+.equation {
+  font-size: 2rem;
+}
+
 .price-card {
   border-radius: 5px;
   width: 350px;
@@ -366,6 +370,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1em;
 }
 
 .plan-title {
@@ -810,6 +815,7 @@ body {
     width: 600px;
     flex-direction: column;
     justify-content: center;
+    gap: 25px;
   }
 
   .about-page-intro-p h1 {
