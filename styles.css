@@ -288,6 +288,7 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: lighter;
+    text-align: center;
 }
 
 .blue {
@@ -341,6 +342,12 @@ body {
     width: 50px;
     height: auto;
     margin: auto;
+}
+
+@media(max-width:600px) {
+  .whatWeOffer-container h1 {
+    margin: 10px;
+  }
 }
 
 /*  >>>>>>>>>>>>>>>>      Pricing Cards   <<<<<<<<<<<<<<<<<<  */
@@ -446,7 +453,6 @@ body {
 .contractSection-image-container {
     background-color: #190061;
     border-radius: 200px 500px 250px 400px;
-    margin-top: 100px;
 }
 
 .checkMark-image {
@@ -470,29 +476,6 @@ body {
     width: 50vw;
 }
 
-/* .contractSection-bottom-right {
-  gap: 50px;
-  padding-top: 50px;
-} */
-
-/* @media(max-width: 800px) {
-  .contractSection-container-right {
-      width: 700px;
-      margin: 20px;
-  }
-} */
-
-@media(max-width: 1000px) {
-  .contractSection-container-right {
-      /* width: 80vw; */
-      /* margin: 20px; */
-  }
-}
-
-/* .contractSection-top-right {
-    width: 100%;
-} */
-
 .contractSection-bottom-right {
     display: grid;
     grid-template-columns: auto auto;
@@ -513,7 +496,8 @@ body {
 
 @media(max-width: 600px) {
   .contractSection-bottom-right {
-      column-gap: 1rem;
+      display: flex;
+      flex-direction: column;
   }
 
   .checkMark-image {
@@ -646,6 +630,14 @@ body {
     border-radius: 100px 300px 0px 0px;
     line-height: 2;
     border-bottom: white 1px solid;
+}
+
+.footer-info-container {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-section h4 {
