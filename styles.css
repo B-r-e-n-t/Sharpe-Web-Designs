@@ -15,8 +15,9 @@ body {
 }
 
   .logo {
-    max-width: 125px;
+    width: 175px;
     margin: auto;
+    padding: 10px 0px 10px 0px;
   }
   
   .nav {
@@ -45,8 +46,7 @@ body {
   
   .nav__link {
     color: white;
-    /* font-weight: var(--fw-bold);
-    font-size: var(--fs-h3); */
+    font-size: 1.5rem;
     text-decoration: none;
     padding-bottom: 15px;
   }
@@ -162,13 +162,13 @@ body {
 
       .nav__link {
         color: black;
-        font-weight: var(--fw-bold);
-        font-size: var(--fs-h3);
+        font-size: 1.5rem;
         text-decoration: none;
       }
 
       .logo {
         margin: 0;
+        width: 225px;
       }
   }
 
@@ -195,12 +195,14 @@ body {
     font-size: 5vw;
     margin: 0;
     padding-left: 10vw;
+    font-weight: 300;
 }
 
 .hero h3 {
     font-size: 1.25rem;
     padding-left: 10vw;
     margin-top: 25px;
+    font-weight: 300;
 }
 
 .hero-plans-button {
