@@ -372,14 +372,13 @@ body {
 }
 
 .price-card {
-  border-radius: 5px;
+  border-radius: 15px;
   width: 350px;
-  height: 400px;
-  box-shadow: 0 0 10px rgb(192, 190, 190);
+  /* height: 400px; */
+  box-shadow: 0 0 10px #190061;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em;
 }
 
 .plan-title {
@@ -387,6 +386,7 @@ body {
   margin-bottom: 20px;
   color: orangered;
   font-size: 30px;
+  text-align: center;
 }
 
 .price-icon {
@@ -403,7 +403,6 @@ body {
 
 .pricing-plans-features {
   display: flex;
-  justify-content: center;
   align-items: left;
   font-size: 20px;
   margin-bottom: 15px;
@@ -424,6 +423,7 @@ body {
 .pricing-plans-button {
   border-radius: 25px;
   border: orangered 1px solid;
+  text-align: center;
   padding: 10px;
   margin-top: 25px;
   box-shadow: inset 0 0 0 0 orangered;
@@ -603,6 +603,11 @@ body {
 @media(max-width: 600px) {
   .whoWeAre-paragraph {
       width: 300px;
+  }
+
+  * {
+    padding-right: 5px;
+    padding-left: 5px;
   }
 
   .profile-pic {
