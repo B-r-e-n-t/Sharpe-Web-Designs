@@ -22,7 +22,7 @@ body {
   
   .nav {
     position: fixed;
-    background: #190061;
+    background: #003e29;
     color: white;
     top: 0;
     bottom: 0;
@@ -53,7 +53,7 @@ body {
   
   .nav__link:hover {
     cursor: pointer;
-    border-bottom: orangered 1px solid;
+    border-bottom: goldenrod 1px solid;
   }
   
   .nav-toggle {
@@ -75,7 +75,7 @@ body {
   .hamburger,
   .hamburger::before, 
   .hamburger::after {
-    background: #190061;
+    background: #003e29;
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -181,8 +181,8 @@ body {
   
   /* >>>>>>>>>>>>>>>> Hero Section <<<<<<<<<<<<<<<*/
 .hero {
-    background-color: #190061;
-    background: linear-gradient(to bottom, #190061, #240090);
+    background-color: #003e29;
+    background: linear-gradient(to bottom, #003e29, #002116);
     color: white;
     border-bottom-left-radius: 450px 500px;
     border-bottom-right-radius: 1500px 800px;
@@ -215,14 +215,14 @@ body {
   border-radius: 15px;
   border: 0;
   border-bottom: transparent solid 0px;
-  box-shadow: inset 0 0 0 0 orangered;
-  color: orangered;
+  box-shadow: inset 0 0 0 0 goldenrod;
+  color: goldenrod;
   transition: color .5s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 .hero-plans-button:hover {
   color: #fff;
-  box-shadow: inset 200px 0 0 0 orangered;
+  box-shadow: inset 200px 0 0 0 goldenrod;
   cursor: pointer;
 }
 
@@ -294,7 +294,7 @@ body {
 }
 
 .blue {
-    color: orangered;
+    color: goldenrod;
 }
 
 .whatWeOffer-paragraph {
@@ -329,7 +329,7 @@ body {
 }
 
 .smartPhone-container {
-    background-color: gold;
+    background-color: goldenrod;
 }
 
 .computerAndPhone-container {
@@ -337,7 +337,7 @@ body {
 }
 
 .seo-container {
-    background-color: orange;
+    background-color: goldenrod;
 }
 
 .features-icon {
@@ -375,7 +375,7 @@ body {
   border-radius: 15px;
   width: 350px;
   /* height: 400px; */
-  box-shadow: 0 0 10px #190061;
+  box-shadow: 0 0 10px #003e29;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -384,7 +384,7 @@ body {
 .plan-title {
   margin-top: 20px;
   margin-bottom: 20px;
-  color: orangered;
+  color: #daa520;
   font-size: 30px;
   text-align: center;
 }
@@ -422,18 +422,18 @@ body {
 
 .pricing-plans-button {
   border-radius: 25px;
-  border: orangered 1px solid;
+  border: goldenrod 1px solid;
   text-align: center;
   padding: 10px;
   margin-top: 25px;
-  box-shadow: inset 0 0 0 0 orangered;
-  color: orangered;
+  box-shadow: inset 0 0 0 0 goldenrod;
+  color: goldenrod;
   transition: color .5s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 .pricing-plans-button:hover {
   color: #fff;
-  box-shadow: inset 200px 0 0 0 orangered;
+  box-shadow: inset 200px 0 0 0 goldenrod;
   cursor: pointer;
 }
 
@@ -453,7 +453,7 @@ body {
 }
 
 .contractSection-image-container {
-    background-color: #190061;
+    background-color: #003e29;
     border-radius: 200px 500px 250px 400px;
 }
 
@@ -548,7 +548,7 @@ body {
 }
 
 .portfolioPiece {
-    border-bottom: #190061 solid 5px;
+    border-bottom: #003e29 solid 5px;
     border-radius: 10px;
     background-color: white;
     border-bottom-left-radius: 5px;
@@ -587,7 +587,7 @@ body {
 .profile-pic-container {
     width: 400px;
     height: auto;
-    background-color: #190061;
+    background-color: #003e29;
     border-radius: 500px 200px 500px 200px;
     text-align: center;
 }
@@ -628,7 +628,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #190061;
+    background-color: #003e29;
     color: white;
     align-items: center;
     margin-top: 50px;
@@ -690,7 +690,7 @@ body {
 .footer-subsection {
   padding: 25px 0px 25px 0px;
   text-align: center;
-  background-color: #190061;
+  background-color: #003e29;
   color: white;
 }
 
@@ -743,7 +743,7 @@ body {
   
   .submit-btn {
     border-radius: 10px;
-    background-color: #190061;
+    background-color: #003e29;
     border: 0;
     color: white;
     font-size: 20px;
@@ -753,7 +753,7 @@ body {
   .submit-btn:hover {
     cursor: pointer;
     background-color: white;
-    color: #3843B8;
+    color: #003e29;
   }
 
   .contact-info-details {
